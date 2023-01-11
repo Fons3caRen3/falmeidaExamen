@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="falmeidaExamen.resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" FontSize="16"/>
+            <!--Label x:Name="" HorizontalTextAlignment="Center" FontSize="16"/-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="lblnombreEstudiante" Placeholder="Nombre" Grid.Row="0" Grid.Column="1" IsEnabled="False"/>
+
+                <Label Text="Total a Cancelar" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="lblmontoTotal" Keyboard="Numeric" Placeholder="Monto Inicial" Grid.Row="1" Grid.Column="1" IsEnabled="False"/>
+
+                <Label Text="Valor a cancelar mensualmente" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="lblmensuales" Keyboard="Numeric" Placeholder="Valores por pagar" Grid.Row="2" Grid.Column="1" IsEnabled="False"/>
+
+            </Grid>
+            <Button x:Name="btnInformacion" Text="Acerca de" Clicked="btnInformacion_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
